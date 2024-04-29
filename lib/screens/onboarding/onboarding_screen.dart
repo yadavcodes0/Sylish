@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:stylish/screens/onboarding/widget/onboarding_screen_widget.dart';
 
-import '../login/login_screen.dart';
-
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({super.key});
 
@@ -134,11 +132,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       )
                     : GestureDetector(
                         onTap: () {
-                          Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (context) => const LoginScreen(),
-                            ),
-                          );
+                          Navigator.pushNamed(context, '/login');
                         },
                         child: Text(
                           "Get Started",

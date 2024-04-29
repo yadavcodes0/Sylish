@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../login/login_screen.dart';
-
 class OnboardingScreenWidget extends StatelessWidget {
   const OnboardingScreenWidget({
     super.key,
@@ -53,11 +51,7 @@ class OnboardingScreenWidget extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (context) => const LoginScreen(),
-                        ),
-                      );
+                      Navigator.pushNamed(context, '/login');
                     },
                     child: Text(
                       "Skip",
