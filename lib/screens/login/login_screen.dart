@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:stylish/screens/home/home_screen.dart';
+import 'package:stylish/screens/get_started_screen.dart';
 import 'package:stylish/screens/login/widgets/buttons/button.dart';
 import 'package:stylish/screens/login/widgets/textfiled.dart';
 
@@ -23,7 +23,7 @@ class _LoginScreenState extends State<LoginScreen> {
         context,
         MaterialPageRoute(
           builder: (_) {
-            return const HomeScreen();
+            return const GetStartedScreen();
           },
         ),
       );
