@@ -27,7 +27,7 @@ class Stylish extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        "/": (context) => const GetStartedScreen(),
+        "/": (context) => const HomeScreen(),
         "/login": (context) => const LoginScreen(),
         "/signup": (context) => const SignUpScreen(),
         "/home": (context) => const HomeScreen(),
