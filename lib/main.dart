@@ -4,6 +4,7 @@ import "package:stylish/screens/forgotPassword/forgot_password.dart";
 import "package:stylish/screens/get_started_screen.dart";
 import "package:stylish/screens/home/home_screen.dart";
 import "package:stylish/screens/login/login_screen.dart";
+import "package:stylish/screens/splash/splash_screen.dart";
 
 import "screens/signup/sign_up_screen.dart";
 
@@ -27,7 +28,7 @@ class Stylish extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        "/": (context) => const HomeScreen(),
+        "/": (context) => const SplashScreen(),
         "/login": (context) => const LoginScreen(),
         "/signup": (context) => const SignUpScreen(),
         "/home": (context) => const HomeScreen(),

@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:stylish/screens/home/widgets/app_bar.dart';
 import 'package:stylish/screens/home/widgets/search_bar.dart';
 
-import 'widgets/dicount_cards.dart';
+import 'widgets/discount_cards.dart';
 import 'widgets/featured_section.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -68,7 +68,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     ).copyWith(top: 20),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -104,8 +103,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ],
                         ),
                         Container(
-                          width: 89,
-                          height: 28,
+                          height: 30,
                           alignment: Alignment.center,
                           padding: const EdgeInsets.symmetric(
                             horizontal: 10,
@@ -134,13 +132,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                   height: 0.11,
                                 ),
                               ),
-                              Container(
-                                width: 16,
-                                height: 16,
-                                clipBehavior: Clip.antiAlias,
-                                decoration: const BoxDecoration(),
-                                child: const FlutterLogo(),
-                              ),
+                              const SizedBox(width: 4),
+                              SvgPicture.asset("assets/icons/arrow.svg"),
                             ],
                           ),
                         )
