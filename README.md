@@ -15,6 +15,12 @@
   <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License"/>
 </p>
 
+<p align="center">
+  <a href="https://sylish.vercel.app/">
+    <img src="https://img.shields.io/badge/Live%20Demo-Visit%20App-ff69b4?style=for-the-badge&logo=vercel" alt="Live Demo" height="40"/>
+  </a>
+</p>
+
 ---
 
 ## ✨ Features
@@ -128,13 +134,6 @@ flutter run
 
 ```bash
 flutter build apk --release
-```
-
-### Deploy to Web (Vercel)
-
-```bash
-flutter build web --release
-# Deploy the build/web folder to Vercel
 ```
 
 ---
