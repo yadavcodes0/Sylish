@@ -1,6 +1,5 @@
 import 'package:another_flutter_splash_screen/another_flutter_splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:stylish/screens/onboarding/onboarding_screen.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -17,7 +16,7 @@ class SplashScreen extends StatelessWidget {
         childWidget: SizedBox(
           height: 200,
           width: 200,
-          child: SvgPicture.asset("assets/icons/logo.svg"),
+          child: Image.asset("assets/icons/logo.png"),
         ),
         nextScreen: const OnBoardingScreen(),
       ),

@@ -58,8 +58,8 @@ class _GetStartedScreenState extends State<GetStartedScreen> {
                     end: const Alignment(0.00, -1.00),
                     stops: const [0.0, 0.5],
                     colors: [
-                      Colors.black.withOpacity(0.7),
-                      Colors.black.withOpacity(0.3),
+                      Colors.black.withValues(alpha: 0.7),
+                      Colors.black.withValues(alpha: 0.3),
                     ],
                   ),
                 ),

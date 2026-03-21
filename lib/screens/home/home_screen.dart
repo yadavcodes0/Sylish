@@ -4,6 +4,11 @@ import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:stylish/screens/home/widgets/app_bar.dart';
 import 'package:stylish/screens/home/widgets/search_bar.dart';
+import 'package:stylish/screens/home/widgets/deal_of_the_day_list.dart';
+import 'package:stylish/screens/home/widgets/special_offers_banner.dart';
+import 'package:stylish/screens/home/widgets/trending_products_section.dart';
+import 'package:stylish/screens/home/widgets/new_arrivals_section.dart';
+import 'package:stylish/screens/home/widgets/sponsored_section.dart';
 
 import 'widgets/discount_cards.dart';
 import 'widgets/featured_section.dart';
@@ -52,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                 const SizedBox(height: 40),
 
-                // Deal of the day
+                // Deal of the day Header
                 Container(
                   height: 70,
                   width: double.infinity,
@@ -73,7 +78,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Deal of the day',
+                              'Deal of the Day',
                               style: GoogleFonts.montserrat(
                                 color: Colors.white,
                                 fontSize: 18,
@@ -121,7 +126,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              const Text(
+                               const Text(
                                 'View all',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
@@ -141,6 +146,33 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
+                
+                const SizedBox(height: 16),
+                
+                // Deal of the day Products List
+                const DealOfTheDayList(),
+                
+                const SizedBox(height: 24),
+                
+                // Special Offers and Flat and Heels Banners
+                const SpecialOffersBanner(),
+                
+                const SizedBox(height: 24),
+                
+                // Trending Products Section
+                const TrendingProductsSection(),
+                
+                const SizedBox(height: 24),
+                
+                // New Arrivals Section
+                const NewArrivalsSection(),
+                
+                const SizedBox(height: 24),
+                
+                // Sponsored Section
+                const SponsoredSection(),
+
+                const SizedBox(height: 24),
               ],
             ),
           ),

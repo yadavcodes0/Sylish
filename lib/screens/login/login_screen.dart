@@ -42,6 +42,28 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  // skip button
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => const GetStartedScreen(),
+                          ),
+                        );
+                      },
+                      child: Text(
+                        'Skip for now',
+                        style: GoogleFonts.montserrat(
+                          color: Colors.black54,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ),
+                  ),
                   // heading
                   Align(
                     alignment: Alignment.centerLeft,
