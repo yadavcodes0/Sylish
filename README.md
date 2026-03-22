@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <a href="https://sylish.vercel.app/">
+  <a href="https://sylishstore.vercel.app/">
     <img src="https://img.shields.io/badge/Live%20Demo-Visit%20App-ff69b4?style=for-the-badge&logo=vercel" alt="Live Demo" height="40"/>
   </a>
 </p>
