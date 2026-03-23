@@ -120,7 +120,7 @@ lib/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/Sylish.git
+git clone https://github.com/yadavcodes0/Sylish.git
 cd Sylish
 
 # Install dependencies
